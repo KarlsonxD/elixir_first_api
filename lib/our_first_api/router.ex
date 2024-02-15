@@ -18,5 +18,5 @@ defmodule OurFirstApi.Router do
 
   # adding default/fallback endpoints
   get("/", do: send_resp(conn, 200, "OK"))
-  match(_, do: send_resp(conn, 404, "Error"))
+  match(_, do: send_resp(conn, 404, "ERROR"))
 end
